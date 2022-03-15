@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/grid_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/giacchuyen_1" />
+
+    <TextView
+        android:id="@+id/txtTen"
+        android:layout_width="157dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="16dp"
+        android:text="Cáp chuyển từ cổng USB sang PS2"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/grid_img"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/grid_img"
+        app:layout_constraintTop_toBottomOf="@+id/grid_img" />
+
+    <RatingBar
+        android:id="@+id/txtRate"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="@+id/txtTen"
+        app:layout_constraintTop_toBottomOf="@+id/txtTen" />
+
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="69.900 đ"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/txtRate"
+        app:layout_constraintTop_toBottomOf="@+id/txtRate" />
+
+    <TextView
+        android:id="@+id/num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(15)"
+        app:layout_constraintBottom_toBottomOf="@+id/txtRate"
+        app:layout_constraintTop_toTopOf="@+id/txtRate"
+        tools:layout_editor_absoluteX="223dp" />
+
+    <TextView
+        android:id="@+id/redue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="-39%"
+        app:layout_constraintBottom_toBottomOf="@+id/money"
+        app:layout_constraintStart_toEndOf="@+id/money"
+        app:layout_constraintTop_toTopOf="@+id/money" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="61dp"
+        android:background="@color/purple_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="205dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/white"
+        android:drawableLeft="@android:drawable/ic_search_category_default"
+        android:ems="10"
+        android:hint="Dây cáp usb"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        tools:layout_editor_absoluteX="103dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.8"
+        app:srcCompat="@drawable/vector" />
+</androidx.constraintlayout.widget.ConstraintLayout>
